@@ -7,20 +7,20 @@ public class Exercise6 {
         Scanner scanner =new Scanner(System.in);
         System.out.print("Nhập biển số xe : ");
         int bienSo = scanner.nextInt();
-        int sum = bienSo%10;
+        int tong = bienSo%10;
         bienSo =bienSo/10;
-        sum = sum + bienSo%10;
+        tong = tong + bienSo%10;
         
         bienSo =bienSo/10;
-        sum = sum + bienSo%10;
+        tong = tong + bienSo%10;
        
         bienSo =bienSo/10;
-        sum = sum + bienSo%10;
+        tong = tong + bienSo%10;
        
         bienSo =bienSo/10;
-        sum =sum +bienSo;
+        tong =tong +bienSo;
 
-        int nut = sum%10;
+        int nut = tong%10;
         System.out.println("Số nút của biển số xe : " + nut );
     }
 }
