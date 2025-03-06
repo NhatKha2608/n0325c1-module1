@@ -10,10 +10,13 @@ public class Exercise6 {
         int sum = bienSo%10;
         bienSo =bienSo/10;
         sum = sum + bienSo%10;
+        
         bienSo =bienSo/10;
         sum = sum + bienSo%10;
+       
         bienSo =bienSo/10;
         sum = sum + bienSo%10;
+       
         bienSo =bienSo/10;
         sum =sum +bienSo;
 
