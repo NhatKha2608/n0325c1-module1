@@ -1,10 +1,10 @@
 package ss4_condision;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 /**
  *   Tính lương nhân viên theo thâm niên công tác
+ *   final double BASIC_SALARY = 650000;
  */
 public class Exercise7 {
     public static void main(String[] args) {
@@ -12,9 +12,9 @@ public class Exercise7 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Nhập vào thâm niên công tác của nhân viên : ");
         int workingSeniority = scanner.nextInt();
-        double basicSalary = 650000;
-
+        final double BASIC_SALARY = 650000;
         double salaryCoefficient;
+
         if (workingSeniority < 12) {
             salaryCoefficient = 1.92;
         } else if (workingSeniority < 36) {
@@ -25,7 +25,7 @@ public class Exercise7 {
             salaryCoefficient = 4.5;
         }
 
-        double salary = basicSalary*salaryCoefficient;
+        double salary = BASIC_SALARY *salaryCoefficient;
         System.out.println("Lương của nhân viên là : " + salary);
     }
 }

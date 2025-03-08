@@ -3,7 +3,7 @@ package ss4_condision;
 import java.util.Scanner;
 
 /**
- *  Nhập vào tháng năm và cho biết trong tháng đó có bao nhieu ngày
+ * Nhập vào tháng năm và cho biết trong tháng đó có bao nhieu ngày
  */
 public class Exercise8 {
     public static void main(String[] args) {
@@ -11,9 +11,12 @@ public class Exercise8 {
 
         System.out.print("Nhập tháng (1-12): ");
         int month = scanner.nextInt();
+        if (month < 1 || month > 12) {
+            System.out.println("Thang nhap bi sai!!");
+            return;
+        }
         System.out.print("Nhập năm: ");
         int year = scanner.nextInt();
-
         int day;
         switch (month) {
             case 4, 6, 9, 11 -> day = 30;

@@ -12,31 +12,27 @@ public class Exercise11 {
 
         System.out.print("Nhập ngày : ");
         int day = scanner.nextInt();
-
-        System.out.print("Nhập tháng : ");
-        int month = scanner.nextInt();
-
-        System.out.print("Nhập năm : ");
-        int year = scanner.nextInt();
-
-        // kiểm tra ngày, tháng có hợp lệ hay không
         if (day < 1 || day > 31) {
             System.out.println("Ngày không hợp lệ!!");
             return;
         }
 
+        System.out.print("Nhập tháng : ");
+        int month = scanner.nextInt();
 
         if (month < 1 || month > 12) {
             System.out.println("Tháng không hợp lệ!! ");
             return;
         }
-
         if (month == 4 || month == 6 || month == 9 || month == 11) {
             if (day == 31) {
                 System.out.println("Ngày không hợp lệ!!");
                 return;
             }
         }
+
+        System.out.print("Nhập năm : ");
+        int year = scanner.nextInt();
 
         boolean isLeapYear = year % 400 == 0 || (year % 4 == 0 && year % 100 != 0);
         if (month == 2) {
