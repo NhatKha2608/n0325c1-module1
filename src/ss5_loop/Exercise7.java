@@ -2,9 +2,12 @@ package ss5_loop;
 
 import java.util.Scanner;
 
+/**
+ * 7. In dãy số Fibonacci đến n
+ */
 public class Exercise7 {
     public static void main(String[] args) {
-        //7. In dãy số Fibonacci đến n
+
         Scanner scanner = new Scanner(System.in);
         System.out.print("Nhap n : ");
         int n = scanner.nextInt();

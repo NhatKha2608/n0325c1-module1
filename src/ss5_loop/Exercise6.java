@@ -2,9 +2,11 @@ package ss5_loop;
 
 import java.util.Scanner;
 
+/**
+ * 6.  In dãy số 2, -4, 6, 8, -10, 12, 14, 16, -18, ….., n
+ */
 public class Exercise6 {
     public static void main(String[] args) {
-        //6.  In dãy số 2, -4, 6, 8, -10, 12, 14, 16, -18, ….., n
         Scanner scanner = new Scanner(System.in);
         System.out.print("Nhap n : ");
         int n = scanner.nextInt();

@@ -2,9 +2,11 @@ package ss5_loop;
 
 import java.util.Scanner;
 
+/**
+ * 3. In dãy số chẵn từ 2 đến n với giá trị dương, âm xen kẽ
+ */
 public class Exercise3 {
     public static void main(String[] args) {
-        //3. In dãy số chẵn từ 2 đến n với giá trị dương, âm xen kẽ
         Scanner scanner = new Scanner(System.in);
         System.out.print("Nhap n : ");
         int n = scanner.nextInt();

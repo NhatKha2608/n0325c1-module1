@@ -2,9 +2,13 @@ package ss5_loop;
 
 import java.util.Scanner;
 
+/**
+ * 10. Tính tổng S = 1 + 1/2 + 1/3 + ... + 1/n
+ */
+
 public class Exercise10 {
     public static void main(String[] args) {
-        //10. Tính tổng S = 1 + 1/2 + 1/3 + ... + 1/n
+
         Scanner scanner = new Scanner(System.in);
         System.out.print("Nhap n : ");
         int n = scanner.nextInt();

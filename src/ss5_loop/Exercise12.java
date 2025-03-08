@@ -2,9 +2,11 @@ package ss5_loop;
 
 import java.util.Scanner;
 
+/**
+ * 12. Tính tổng và tích các chữ số của một số nguyên
+ */
 public class Exercise12 {
     public static void main(String[] args) {
-        //12. Tính tổng và tích các chữ số của một số nguyên
         Scanner scanner = new Scanner(System.in);
         System.out.print("Nhap m : ");
         int m = scanner.nextInt();

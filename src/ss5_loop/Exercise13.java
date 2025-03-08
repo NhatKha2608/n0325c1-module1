@@ -2,9 +2,11 @@ package ss5_loop;
 
 import java.util.Scanner;
 
+/**
+ *     13. Tìm ước số chung lớn nhất và bội số chung nhỏ nhất của 2 số nguyên dương
+ */
 public class Exercise13 {
     public static void main(String[] args) {
-        //13. Tìm ước số chung lớn nhất và bội số chung nhỏ nhất của 2 số nguyên dương
         Scanner scanner = new Scanner(System.in);
         System.out.print("Nhap a : ");
         int a = scanner.nextInt();
