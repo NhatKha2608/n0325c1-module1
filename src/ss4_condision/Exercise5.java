@@ -3,9 +3,12 @@ package ss4_condision;
 import java.io.DataOutput;
 import java.util.Scanner;
 
+/**
+ *   Giai phương trình bật 1 có dạng : ax + b = 0
+ */
 public class Exercise5 {
     public static void main(String[] args) {
-        // Giai phương trình bật 1 có dạng : ax + b = 0
+
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Nhập a: ");

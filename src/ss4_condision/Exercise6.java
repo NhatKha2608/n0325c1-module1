@@ -2,9 +2,12 @@ package ss4_condision;
 
 import java.util.Scanner;
 
+/**
+ *  Giai phương trình bật 2 có dạng : ax2 + bx + c =0
+ */
 public class Exercise6 {
     public static void main(String[] args) {
-        // Giai phương trình bật 2 có dạng : ax2 + bx + c =0
+
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Nhập a: ");
@@ -35,8 +38,9 @@ public class Exercise6 {
                 double x = -b / (2 * a);
                 System.out.println("Phương trình có nghiệm x = " + x);
             } else {
-                double x1 = (-b - Math.sqrt(delta)) / (2 * a);
-                double x2 = (-b + Math.sqrt(delta)) / (2 * a);
+                double sqrtDelta = Math.sqrt(delta);
+                double x1 = (-b - sqrtDelta) / (2 * a);
+                double x2 = (-b + sqrtDelta) / (2 * a);
                 System.out.println("Phương trình có hai nghiệm là x1 = " + x1 + " x2 = " + x2);
             }
         }
