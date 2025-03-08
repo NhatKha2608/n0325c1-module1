@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Exercise11 {
     public static void main(String[] args) {
         //11. Kiểm tra và tìm ngày kế tiếp, ngày trước đó
-        Scanner scanner =new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Nhập ngày : ");
         int day = scanner.nextInt();
@@ -14,36 +14,36 @@ public class Exercise11 {
         int month = scanner.nextInt();
 
         System.out.print("Nhập năm : ");
-        int year =scanner.nextInt();
+        int year = scanner.nextInt();
 
         // kiểm tra ngày, tháng có hợp lệ hay không
-        if(day<1||day>31){
+        if (day < 1 || day > 31) {
             System.out.println("Ngày không hợp lệ!!");
             return;
         }
 
 
-        if(month<1||month>12){
+        if (month < 1 || month > 12) {
             System.out.println("Tháng không hợp lệ!! ");
             return;
         }
 
-        if (month==4||month==6||month==9||month==11){
-            if (day==31) {
+        if (month == 4 || month == 6 || month == 9 || month == 11) {
+            if (day == 31) {
                 System.out.println("Ngày không hợp lệ!!");
                 return;
             }
         }
 
         boolean isLeapYear = year % 400 == 0 || (year % 4 == 0 && year % 100 != 0);
-        if (month ==2 ) {
+        if (month == 2) {
             if (isLeapYear) {
-                if (day >29){
+                if (day > 29) {
                     System.out.println("Ngày không hợp lệ!!");
                     return;
                 }
 
-            } else if (day>28){
+            } else if (day > 28) {
                 System.out.println("Ngày không hợp lệ!!");
                 return;
             }
