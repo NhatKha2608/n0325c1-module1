@@ -2,9 +2,12 @@ package ss4_condision;
 
 import java.util.Scanner;
 
+/**
+ * 11. Kiểm tra và tìm ngày kế tiếp, ngày trước đó
+ */
 public class Exercise11 {
     public static void main(String[] args) {
-        //11. Kiểm tra và tìm ngày kế tiếp, ngày trước đó
+
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Nhập ngày : ");
