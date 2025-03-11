@@ -1,11 +1,7 @@
 package ss5_loop;
 
-<<<<<<< HEAD
-=======
-
 import java.util.Scanner;
 
->>>>>>> 6c66fb8 (hello)
 public class Exercise16A {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
