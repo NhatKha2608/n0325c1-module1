@@ -1,8 +1,5 @@
 package ss5_loop;
 
-/**
- *
- */
 public class Exercise16A {
     public static void main(String[] args) {
         int n = 5;
