@@ -5,8 +5,14 @@ import java.util.Scanner;
 public class Exercise17 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Nhập chiều dài cạnh từ bàn phím : ");
-        int n = scanner.nextInt();
+        int n;
+        do {
+            System.out.print("Nhập chiều dài cạnh : ");
+            n = scanner.nextInt();
+            if (n <= 0) {
+                System.out.println(" Nhap sai vui long nhap lai ");
+            }
+        } while (n <= 0);
 
         System.out.println("Câu A: ");
         for (int i = 1; i <= n; i++) {
